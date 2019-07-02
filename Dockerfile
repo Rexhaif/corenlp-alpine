@@ -5,7 +5,7 @@ RUN apk add unzip
 RUN mkdir /server
 
 RUN cd /server && wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
-RUN cd /server && unzip ./stanford-corenlp-full-2018-10-05.zip ./
+RUN cd /server && unzip /server/stanford-corenlp-full-2018-10-05.zip /server
 
 RUN mv /server/stanford-corenlp-full-2018-10-05 /server/corenlp
 
